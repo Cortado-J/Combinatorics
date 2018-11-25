@@ -6,8 +6,33 @@
 	<dict>
 		<key>Combinatorics.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>TestCombanitorics.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BC7A099921AAC053009C8913</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC7A09B321AAC2C6009C8913</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCA3E78021AB1AFD008D4F76</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

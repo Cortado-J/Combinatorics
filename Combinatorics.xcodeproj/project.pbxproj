@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BC7A099E21AAC053009C8913 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A099D21AAC053009C8913 /* main.swift */; };
+		BC7A09AA21AAC113009C8913 /* Multiset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A09A921AAC113009C8913 /* Multiset.swift */; };
+		BC7A09AC21AAC200009C8913 /* Combinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A09AB21AAC200009C8913 /* Combinatorics.swift */; };
+		BCA3E78421AB1AFD008D4F76 /* TestCombinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3E78321AB1AFD008D4F76 /* TestCombinatorics.swift */; };
+		BCA3E78A21AB1B3C008D4F76 /* Combinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A09AB21AAC200009C8913 /* Combinatorics.swift */; };
+		BCA3E78B21AB1B3E008D4F76 /* Multiset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A09A921AAC113009C8913 /* Multiset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,22 @@
 /* Begin PBXFileReference section */
 		BC7A099A21AAC053009C8913 /* Combinatorics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Combinatorics; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7A099D21AAC053009C8913 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BC7A09A921AAC113009C8913 /* Multiset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multiset.swift; sourceTree = "<group>"; };
+		BC7A09AB21AAC200009C8913 /* Combinatorics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinatorics.swift; sourceTree = "<group>"; };
+		BCA3E78121AB1AFD008D4F76 /* TestCombinatorics.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCombinatorics.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA3E78321AB1AFD008D4F76 /* TestCombinatorics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombinatorics.swift; sourceTree = "<group>"; };
+		BCA3E78521AB1AFD008D4F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC7A099721AAC053009C8913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA3E77E21AB1AFD008D4F76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7A099C21AAC053009C8913 /* Combinatorics */,
+				BCA3E78221AB1AFD008D4F76 /* TestCombinatorics */,
 				BC7A099B21AAC053009C8913 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7A099A21AAC053009C8913 /* Combinatorics */,
+				BCA3E78121AB1AFD008D4F76 /* TestCombinatorics.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +77,19 @@
 			isa = PBXGroup;
 			children = (
 				BC7A099D21AAC053009C8913 /* main.swift */,
+				BC7A09A921AAC113009C8913 /* Multiset.swift */,
+				BC7A09AB21AAC200009C8913 /* Combinatorics.swift */,
 			);
 			path = Combinatorics;
+			sourceTree = "<group>";
+		};
+		BCA3E78221AB1AFD008D4F76 /* TestCombinatorics */ = {
+			isa = PBXGroup;
+			children = (
+				BCA3E78321AB1AFD008D4F76 /* TestCombinatorics.swift */,
+				BCA3E78521AB1AFD008D4F76 /* Info.plist */,
+			);
+			path = TestCombinatorics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +112,23 @@
 			productReference = BC7A099A21AAC053009C8913 /* Combinatorics */;
 			productType = "com.apple.product-type.tool";
 		};
+		BCA3E78021AB1AFD008D4F76 /* TestCombinatorics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA3E78621AB1AFD008D4F76 /* Build configuration list for PBXNativeTarget "TestCombinatorics" */;
+			buildPhases = (
+				BCA3E77D21AB1AFD008D4F76 /* Sources */,
+				BCA3E77E21AB1AFD008D4F76 /* Frameworks */,
+				BCA3E77F21AB1AFD008D4F76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCombinatorics;
+			productName = TESTCOMBINATORICS;
+			productReference = BCA3E78121AB1AFD008D4F76 /* TestCombinatorics.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +140,9 @@
 				ORGANIZATIONNAME = Suhada;
 				TargetAttributes = {
 					BC7A099921AAC053009C8913 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BCA3E78021AB1AFD008D4F76 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -110,16 +160,39 @@
 			projectRoot = "";
 			targets = (
 				BC7A099921AAC053009C8913 /* Combinatorics */,
+				BCA3E78021AB1AFD008D4F76 /* TestCombinatorics */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCA3E77F21AB1AFD008D4F76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC7A099621AAC053009C8913 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7A09AC21AAC200009C8913 /* Combinatorics.swift in Sources */,
+				BC7A09AA21AAC113009C8913 /* Multiset.swift in Sources */,
 				BC7A099E21AAC053009C8913 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA3E77D21AB1AFD008D4F76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA3E78B21AB1B3E008D4F76 /* Multiset.swift in Sources */,
+				BCA3E78A21AB1B3C008D4F76 /* Combinatorics.swift in Sources */,
+				BCA3E78421AB1AFD008D4F76 /* TestCombinatorics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +334,42 @@
 			};
 			name = Release;
 		};
+		BCA3E78721AB1AFD008D4F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZDJL49QA87;
+				INFOPLIST_FILE = TestCombinatorics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tester-suhada.TESTCOMBINATORICS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BCA3E78821AB1AFD008D4F76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZDJL49QA87;
+				INFOPLIST_FILE = TestCombinatorics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tester-suhada.TESTCOMBINATORICS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -278,6 +387,15 @@
 			buildConfigurations = (
 				BC7A09A221AAC053009C8913 /* Debug */,
 				BC7A09A321AAC053009C8913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA3E78621AB1AFD008D4F76 /* Build configuration list for PBXNativeTarget "TestCombinatorics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA3E78721AB1AFD008D4F76 /* Debug */,
+				BCA3E78821AB1AFD008D4F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
